@@ -33,6 +33,17 @@ const Shop = () => {
     setCart(newCart);
   }
 
+  const chooseOneNameFromCart = () => {
+    const name = cart.map(item => item.name);
+    const name1 = name[Math.floor(Math.random() * name.length)];
+    alert(name1);
+  }
+   
+
+  const chooseAgain = () => {
+    setCart([]);
+  }
+
 
   return (
     <div className="container-fluid">
@@ -51,7 +62,10 @@ const Shop = () => {
         </div>
       </div>
       <div className="col-lg-2 col-sm-12 mt-3 rounded cart-2  ">
-          <Cart cart={cart} />
+          <Cart cart={cart}
+            chooseOne={chooseOneNameFromCart}
+          chooseAgain={chooseAgain}
+          />
       </div>
       
 
