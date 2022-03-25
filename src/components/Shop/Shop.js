@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
+import './Shop.css'
 
 const Shop = () => {
   const [products, setProduct] = useState([]);
@@ -15,8 +16,20 @@ const Shop = () => {
   }, [])
   
   const addToCart = (product) => {
-    console.log(product);
-    const newCart = [...cart, product];
+    let newCart = [];
+    const exist = cart.find(item => item.id === product.id);
+    if (!exist) {
+      newCart = [...cart, product];
+    } else {
+      const rest = cart.find(item => item.id !== product.id);
+      newCart = [...rest, product];
+      
+    }
+    if(newCart.length>4){
+      newCart.pop();
+      alert('You can choose maximum 4 dream product');
+    }
+   
     setCart(newCart);
   }
 
@@ -37,7 +50,7 @@ const Shop = () => {
               
         </div>
       </div>
-      <div className="col-lg-2 col-sm-12 mt-3 rounded bg-success  ">
+      <div className="col-lg-2 col-sm-12 mt-3 rounded cart-2  ">
           <Cart cart={cart} />
       </div>
       
