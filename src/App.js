@@ -7,10 +7,10 @@ function App() {
   return (
     <div className="App">
       <div className='p-4'>
-        <h1>Let's Buy Your Dream</h1>
+        <h1>Let's Buy Your Dream Shoe</h1>
         <h3>You can choose maximum 4 dream product</h3>
       </div>
-      
+
       <Shop />
 
 

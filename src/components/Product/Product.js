@@ -1,14 +1,15 @@
 import React from 'react';
 
-const Product = () => {
+const Product = (props) => {
+  const { img,name,price } = props.product;
   return (
-    <div className='col-md-4 p-3'>
-      <div className="card  "  >
-  <img src="" alt="" />
+    <div className='col-lg-4 col-md-6 col  p-3'>
+      <div className="card  h-100"  >
+  <img className='h-75' src={img} alt="" />
   <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h3 className="card-title">{ name}</h3>
+          <h5 className="card-text">Price: $ { price}</h5>
+   <button className="btn btn-primary px-5">Add to cart</button>
   </div>
 </div>
     </div>
