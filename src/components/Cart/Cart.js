@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Cart = () => {
+const Cart = (props) => {
   return (
-    <div>
+    <div className="p-3 ">
       selected product
     </div>
   );
