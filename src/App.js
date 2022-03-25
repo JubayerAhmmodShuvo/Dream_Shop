@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <div className='p-4'>
-        <h1>Let's Buy Your Dream Shoe</h1>
-        <h3>You can choose maximum 4 dream product</h3>
+        <h1 className='heading'> Buy Now Your Dream Shoe</h1>
+        <h4>You can choose maximum 4 dream product</h4>
       </div>
 
       <Shop />

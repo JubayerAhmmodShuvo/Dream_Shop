@@ -17,6 +17,8 @@ const Cart = ({ cart }) => {
         ))}
        
       </div>
+      <button type="button" className="btn btn-outline-success mt-5">Choose 1 For Me</button> <br />
+      <button type="button" className="btn btn-outline-info mt-3">Choose Again</button>
      
     </div>
   );
