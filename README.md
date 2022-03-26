@@ -1,6 +1,6 @@
 # Dream Shop 
 
-## [Shop Link](https://super-dreamshop.netlify.app/)
+## Click to go into the shop [Dream Shop](https://super-dreamshop.netlify.app/)
 
 
 
