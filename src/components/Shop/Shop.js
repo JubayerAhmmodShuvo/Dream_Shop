@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
+import QuestionAns from '../Question&Ans/QuestionAns';
 import './Shop.css'
 
 const Shop = () => {
@@ -52,7 +53,8 @@ const Shop = () => {
 
 
   return (
-    <div className="container-fluid">
+    <div className="">
+      <div className="container-fluid">
        <div className="row justify-content-between ">
       <div className="col-lg-10 col-sm-12  ">
           <div className="row">
@@ -75,8 +77,13 @@ const Shop = () => {
       </div>
       
 
+      </div>
+      
+    
+      </div>
+      <hr className="w-75 mx-auto mt-5"/>
+     <QuestionAns />
     </div>
-   </div>
   );
 };
 
