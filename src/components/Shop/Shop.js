@@ -36,6 +36,7 @@ const Shop = () => {
 
   const chooseOneNameFromCart = () => {
     
+    
     const random = Math.floor(Math.random() * cart.length);
     const name = cart[random].name;
     alert(`Your Selected Name: ${name}`);
