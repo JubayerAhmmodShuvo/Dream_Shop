@@ -34,9 +34,15 @@ const Shop = () => {
   }
 
   const chooseOneNameFromCart = () => {
-    const name = cart.map(item => item.name);
+    
+    const random = Math.floor(Math.random() * cart.length);
+    const name = cart[random].name;
+    alert(`Your Selected Name: ${name}`);
+    /* const name = cart.map(item => item.name);
     const name1 = name[Math.floor(Math.random() * name.length)];
-    alert(name1);
+    alert(name1); */
+
+    
   }
    
 
